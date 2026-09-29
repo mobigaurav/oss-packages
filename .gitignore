@@ -1,0 +1,14 @@
+node_modules/
+lib/
+dist/
+*.log
+.DS_Store
+
+# iOS
+ios/build/
+ios/Pods/
+*.xcuserstate
+xcuserdata/
+
+# TypeScript
+*.tsbuildinfo

@@ -1,0 +1,51 @@
+{
+  "name": "react-native-live-activities",
+  "version": "0.1.0",
+  "description": "React Native bindings for ActivityKit — Live Activities and the Dynamic Island — with a ready-to-copy Widget Extension template.",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src",
+    "lib",
+    "ios",
+    "widget-template",
+    "react-native-live-activities.podspec",
+    "!ios/build",
+    "!**/__tests__"
+  ],
+  "scripts": {
+    "build": "bob build",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "activitykit",
+    "live-activities",
+    "dynamic-island",
+    "widgetkit"
+  ],
+  "repository": "https://github.com/YOUR_ORG/react-native-live-activities",
+  "author": "Your Org <oss@yourorg.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "react-native-builder-bob": "^0.30.0",
+    "typescript": "^5.5.0"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  }
+}

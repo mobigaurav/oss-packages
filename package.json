@@ -1,0 +1,13 @@
+{
+  "name": "oss-packages",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Monorepo for open-source React Native packages wrapping under-served Apple frameworks.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "typecheck": "yarn workspaces run typecheck"
+  }
+}

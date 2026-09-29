@@ -1,0 +1,50 @@
+{
+  "name": "react-native-app-attest",
+  "version": "0.1.0",
+  "description": "React Native bindings for Apple App Attest, paired with a Node.js server-side attestation/assertion verifier.",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src",
+    "lib",
+    "ios",
+    "react-native-app-attest.podspec",
+    "!ios/build",
+    "!**/__tests__"
+  ],
+  "scripts": {
+    "build": "bob build",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "app-attest",
+    "devicecheck",
+    "security",
+    "attestation"
+  ],
+  "repository": "https://github.com/YOUR_ORG/react-native-app-attest",
+  "author": "Your Org <oss@yourorg.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "react-native-builder-bob": "^0.30.0",
+    "typescript": "^5.5.0"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  }
+}

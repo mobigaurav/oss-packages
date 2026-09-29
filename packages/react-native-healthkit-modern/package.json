@@ -1,0 +1,49 @@
+{
+  "name": "react-native-healthkit-modern",
+  "version": "0.1.0",
+  "description": "Modern, TypeScript-first HealthKit bindings for React Native — background observers, iOS 18 data types, and a normalized query API.",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src",
+    "lib",
+    "ios",
+    "react-native-healthkit-modern.podspec",
+    "!ios/build",
+    "!**/__tests__"
+  ],
+  "scripts": {
+    "build": "bob build",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "healthkit",
+    "health",
+    "fitness"
+  ],
+  "repository": "https://github.com/YOUR_ORG/react-native-healthkit-modern",
+  "author": "Your Org <oss@yourorg.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "react-native-builder-bob": "^0.30.0",
+    "typescript": "^5.5.0"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  }
+}
